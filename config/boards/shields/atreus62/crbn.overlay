@@ -43,13 +43,29 @@
         diode-direction = "row2col";
 
         row-gpios
-                = <&pro_micro_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-                , <&pro_micro_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-                , <&pro_micro_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-                , <&pro_micro_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-                , <&pro_micro_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+                = <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+                , <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+                , <&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+                , <&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+                , <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
                 ;
-
+        
+        col-gpios
+                = <&pro_micro 21 GPIO_ACTIVE_HIGH> /* QMK F4 */
+                , <&pro_micro 20 GPIO_ACTIVE_HIGH> /* QMK F5 */
+                , <&pro_micro 19 GPIO_ACTIVE_HIGH> /* QMK F6 */
+                , <&pro_micro 18 GPIO_ACTIVE_HIGH> /* QMK F7 */
+                , <&pro_micro 15 GPIO_ACTIVE_HIGH> /* QMK B1 */
+                , <&pro_micro 14 GPIO_ACTIVE_HIGH> /* QMK B3 */
+                , <&pro_micro 16 GPIO_ACTIVE_HIGH> /* QMK B2 */
+                , <&pro_micro 10 GPIO_ACTIVE_HIGH> /* QMK B6 */
+                , <&pro_micro 9 GPIO_ACTIVE_HIGH> /* QMK B5 */
+                , <&pro_micro 8 GPIO_ACTIVE_HIGH> /* QMK B4 */
+                , <&pro_micro 7 GPIO_ACTIVE_HIGH> /* QMK E6 */
+                , <&pro_micro 6 GPIO_ACTIVE_HIGH> /* QMK D7 */
+                , <&pro_micro 5 GPIO_ACTIVE_HIGH> /* QMK C6 */
+                ;
+        /*  
         col-gpios
                 = <&pro_micro_a 3 GPIO_ACTIVE_HIGH> /* QMK F4 */
                 , <&pro_micro_a 2 GPIO_ACTIVE_HIGH> /* QMK F5 */
@@ -65,5 +81,6 @@
                 , <&pro_micro_a 6 GPIO_ACTIVE_HIGH> /* QMK D7 */
                 , <&pro_micro_d 5 GPIO_ACTIVE_HIGH> /* QMK C6 */
                 ;
+        */
     };
 };
