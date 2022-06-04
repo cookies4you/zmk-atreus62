@@ -28,7 +28,7 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5) RC(4,6) RC(4,7) RC(4,8) RC(4,9) 
      * https://deskthority.net/wiki/Arduino_Pro_Micro#Pinout
      */
     kscan0: kscan_0 {
-        compatible = "zmk,kscan-gpio-matrix"
+        compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
         diode-direction = "row2col";
 
